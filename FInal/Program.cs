@@ -43,3 +43,10 @@ void PrintStringArray(string[] array)
     Console.Write(" -> ");
 }
 
+Console.Write("Введите количество строк массива:\n");
+int n = Convert.ToInt32(Console.ReadLine());
+string[] array = CreateStringArray1(n);
+PrintStringArray(array);
+string[] myArray = CreateStringArray2(array);
+PrintStringArray(myArray);
+Console.WriteLine();
